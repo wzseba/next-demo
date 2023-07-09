@@ -3,7 +3,6 @@ import Link from 'next/link'
 
 import { MainLayout } from '@/components/layouts/MainLayout'
 import { OtroLayout } from '@/components/layouts/OtroLayout'
-import { ReactElement } from 'react'
 
 
 export default function About() {
@@ -22,7 +21,7 @@ export default function About() {
   )
 }
 
-About.getLayout = function getLayout(page: ReactElement){
+About.getLayout = function getLayout(page: JSX.Element){
   return(
     <MainLayout>
       <OtroLayout>
