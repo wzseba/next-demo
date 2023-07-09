@@ -1,12 +1,14 @@
-import Head from 'next/head'
-import styles from './MainLaayout.module.css'
-import { Navbar } from '../Navbar'
+import { ReactNode } from 'react';
+import Head from 'next/head';
+import styles from './MainLaayout.module.css';
+import { Navbar } from '../Navbar';
 
-interface ChildrenProps {
-    children: React.ReactNode
+
+type Props = {
+  children: ReactNode
 }
 
-export const MainLayout = ({children}: ChildrenProps) => {
+export const MainLayout = ({children}: Props) => {
     return (
         <>
           <Head>

@@ -1,10 +1,10 @@
-
-
-interface ChildrenProps {
-    children: React.ReactNode
+import { ReactNode } from "react";
+ 
+type Props = {
+  children: ReactNode
 }
 
-export const OtroLayout = ({children}: ChildrenProps) => {
+export const OtroLayout = ({children} : Props) => {
   return (
     <div style={{
         backgroundColor: 'rgba(255,0,0,1)',
